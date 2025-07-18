@@ -1,0 +1,137 @@
+/* ========== Global ========== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+/* ========== Dashboard Page ========== */
+.dashboard-page h1 {
+  color: #00ACC1;
+  text-align: center;
+  padding: 20px;
+}
+
+.dashboard-page .controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.dashboard-page label {
+  margin: 5px;
+  font-size: 14px;
+}
+
+.dashboard-page select,
+.dashboard-page input[type=number],
+.dashboard-page input[type=range],
+.dashboard-page button {
+  padding: 8px 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+  font-size: 14px;
+  border: 1px solid #333;
+}
+
+.dashboard-page button {
+  background-color: #00796B;
+  color: white;
+  cursor: pointer;
+}
+
+.dashboard-page button:hover {
+  background-color: #004D40;
+}
+
+.dashboard-page canvas {
+  background-color: black;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  border: 2px solid #00ACC1;
+}
+
+/* ========== Auth Pages (Login / Register) ========== */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container {
+  max-width: 400px;
+  background-color: #1E1E1E;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 172, 193, 0.5);
+  color: #E0E0E0;
+  width: 100%;
+}
+
+.auth-container h2 {
+  text-align: center;
+  color: #00ACC1;
+  margin-bottom: 20px;
+}
+
+.auth-container input[type="text"],
+.auth-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2C2C2C;
+  color: #E0E0E0;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00796B;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth-container button:hover {
+  background-color: #004D40;
+}
+
+.auth-container p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.auth-container a {
+  color: #00ACC1;
+  text-decoration: none;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
+
+/* ========== Responsive Fixes ========== */
+@media (max-width: 768px) {
+  .dashboard-page .controls {
+    flex-direction: column;
+  }
+
+  .dashboard-page canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="dashboard-page">
+  <h1>Welcome, <%= username %></h1>
+
+  <!-- Your sorting controls + canvas -->
+  <div class="controls">
+    <label>Algorithm:
+      <select id="algorithm">
+        <option>Bubble Sort</option>
+        <option>Merge Sort</option>
+        <option>Quick Sort</option>
+      </select>
+    </label>
+    <label>Size: <input type="number" id="size" value="30"></label>
+    <label>Min: <input type="number" id="min" value="1"></label>
+    <label>Max: <input type="number" id="max" value="100"></label>
+    <label>Speed: <input type="range" id="speed" min="10" max="1000" value="200"></label>
+    <button onclick="generateData()">Generate</button>
+    <button onclick="startSort('<%= username %>')">Start</button>
+  </div>
+
+  <canvas id="canvas" width="870" height="450"></canvas>
+  <script src="/app.js"></script>
+</body>
+</html>
